@@ -2,15 +2,31 @@ const data={Mathematics:["Number Systems","Polynomials","Coordinate Geometry","L
 // Question Bank with Levels (1 = Easy, 2 = Medium, 3 = Hard)
 const questionBank = {
   maths: [
+    // Level 1: Easy
     { level: 1, q: "Which number is irrational?", answers: ["4", "√2", "9", "16"], correct: 1 },
-    { level: 1, q: "What is the degree of a non-zero constant polynomial?", answers: ["0", "1", "2", "Not defined"], correct: 0 },
-    { level: 2, q: "Value of (256)^0.16 x (256)^0.09 is:", answers: ["4", "16", "64", "256.25"], correct: 0 },
-    { level: 3, q: "If x + 1/x = 4, then x^2 + 1/x^2 = ?", answers: ["16", "14", "12", "10"], correct: 1 }
+    { level: 1, q: "What is the degree of a zero polynomial?", answers: ["0", "1", "Any real number", "Not defined"], correct: 3 },
+    { level: 1, q: "Point (-3, 5) lies in which quadrant?", answers: ["First", "Second", "Third", "Fourth"], correct: 1 },
+    
+    // Level 2: Medium
+    { level: 2, q: "If x + 1 = 0 is a factor of x³ + kx² - 2x + 4, then value of k is:", answers: ["-5", "5", "3", "-3"], correct: 0 },
+    { level: 2, q: "The sum of all interior angles of a quadrilateral is:", answers: ["180°", "270°", "360°", "540°"], correct: 2 },
+    
+    // Level 3: Hard
+    { level: 3, q: "If x + 1/x = 4, then the value of x⁴ + 1/x⁴ is:", answers: ["194", "196", "192", "200"], correct: 0 },
+    { level: 3, q: "Area of an equilateral triangle with side 2√3 cm is:", answers: ["3√3 cm²", "6 cm²", "4√3 cm²", "12 cm²"], correct: 0 }
   ],
+
   science: [
+    // Level 1: Easy
     { level: 1, q: "What is the SI unit of acceleration?", answers: ["m/s", "m/s²", "m", "kg m/s"], correct: 1 },
-    { level: 2, q: "Inertia of an object depends on its:", answers: ["Velocity", "Mass", "Area", "Shape"], correct: 1 },
-    { level: 3, q: "Which cell organelle is known as the powerhouse of the cell?", answers: ["Golgi apparatus", "Mitochondria", "Lysosome", "Plastid"], correct: 1 }
+    { level: 1, q: "Which cell organelle is known as the powerhouse of the cell?", answers: ["Golgi apparatus", "Mitochondria", "Lysosome", "Plastid"], correct: 1 },
+    
+    // Level 2: Medium
+    { level: 2, q: "Inertia of an object depends directly on its:", answers: ["Velocity", "Mass", "Area", "Shape"], correct: 1 },
+    { level: 2, q: "Which tissue is responsible for the movement of food in plants?", answers: ["Xylem", "Phloem", "Parenchyma", "Sclerenchyma"], correct: 1 },
+    
+    // Level 3: Hard
+    { level: 3, q: "A ball is thrown vertically upwards with a velocity of 20 m/s. Max height reached is (g = 10 m/s²):", answers: ["10 m", "20 m", "30 m", "40 m"], correct: 1 }
   ]
 };
 
