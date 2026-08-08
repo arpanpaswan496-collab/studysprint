@@ -10,25 +10,21 @@ const chapterData = {
     { title: "Chapter 7: Probability", summary: "Empirical probability and chance.", content: `<p>P(E) = Favourable / Total outcomes</p>` },
     { title: "Chapter 8: Sequences & Progressions", summary: "Arithmetic Progression & Fibonacci sequence.", content: `<p>AP n-th term: a + (n-1)d</p>` }
   ],
-
   'English': [
     { title: "Unit 1: How I Taught My Grandmother to Read", summary: "Sudha Murty | Determination & respect for teacher.", content: `<p>Avva learned the Kannada alphabet at age 62 and touched her 12-year-old granddaughter's feet in respect.</p>` },
     { title: "Unit 2: The Pot Maker", summary: "Temsula Ao | Passion for traditional art.", content: `<p>Sentila's dedication to pottery despite challenges.</p>` },
     { title: "Unit 3: Vitamin-M", summary: "Asha Nehemiah | Elderly dignity and family bonds.", content: `<p>Grandfather's active and independent life in the city.</p>` }
   ],
-
   'Computer': [
     { title: "Chapter 1: Basics & Generations", summary: "Hardware, CPU and computer generations.", content: `<p>CPU has ALU, CU and MU. Generations range from Vacuum Tubes to AI.</p>` },
     { title: "Chapter 2: 50+ Keyboard Shortcuts", summary: "Essential shortcuts from A to Z.", content: `<p>Ctrl+C (Copy), Ctrl+V (Paste), Ctrl+Z (Undo), F5 (Refresh).</p>` },
     { title: "Chapter 3: 50+ Tech Full Forms", summary: "Common computer abbreviations.", content: `<p>CPU, RAM, ROM, HTML, URL, USB, PDF, LAN, WAN.</p>` }
   ],
-
   'Science': [
     { title: "Chapter 1: Matter in Our Surroundings", summary: "States of matter, evaporation and characteristics.", content: `<p>Matter is made of tiny particles. Three states: Solid, Liquid, Gas.</p>` },
     { title: "Chapter 2: Is Matter Around Us Pure", summary: "Elements, compounds, mixtures and solutions.", content: `<p>Mixtures can be homogeneous or heterogeneous.</p>` },
     { title: "Chapter 3: Atoms and Molecules", summary: "Laws of chemical combination and mole concept.", content: `<p>Law of conservation of mass and constant proportions.</p>` }
   ],
-
   'Social Science': [
     { title: "History Ch 1: The French Revolution", summary: "1789 French society and overthrow of monarchy.", content: `<p>Fall of Bastille, Louis XVI, and Declaration of Rights of Man.</p>` },
     { title: "Geography Ch 1: India - Size and Location", summary: "Latitudes, longitudes and neighboring countries.", content: `<p>India's total land area is 3.28 million square km.</p>` },
@@ -84,7 +80,7 @@ function closeModal() {
   if (modal) modal.style.display = "none";
 }
 
-// Complete Multi-Subject & Multi-Level Question Bank
+// Complete Multi-Subject Question Bank with Levels
 const questionBank = {
   maths: [
     { level: 1, q: "Which number is rational?", answers: ["√2", "√3", "4", "π"], correct: 2 },
@@ -134,15 +130,20 @@ function startCustomQuiz() {
   
   let pool = questionBank[subjectSelect] || [];
   
-  // Filter questions based on selected level
+  // Pehle selected level ke questions filter karo
   let filteredPool = pool.filter(q => q.level === levelSelect);
   
+  // Agar us level mein kam questions hain, toh baaki pool se le lo taaki user ki select ki hui limit (5, 10, 20) poori ho sake
+  if (filteredPool.length < count) {
+    let remainingPool = pool.filter(q => q.level !== levelSelect);
+    filteredPool = filteredPool.concat(remainingPool);
+  }
+
   if (filteredPool.length === 0) {
-    alert("Is level ke liye questions jald hi aayenge! Dusra level chunein.");
+    alert("Is subject ke liye questions jald aayenge!");
     return;
   }
 
-  // Shuffle or take up to requested count
   currentQuestions = filteredPool.slice(0, count);
   currentQIndex = 0;
   score = 0;
