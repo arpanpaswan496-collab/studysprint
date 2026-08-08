@@ -40,8 +40,7 @@
         <button onclick="subject('Computer')">💻 <h3>Computer Science</h3><p>Basics, Hardware, Software & HTML</p></button>
     </div>
 </section>
-
-  <section id="quiz">
+<section id="quiz">
     <small>PRACTICE</small>
     <h2>Class 9 Adaptive Quiz</h2>
 
@@ -52,16 +51,28 @@
           <label style="color: #1e1e2e;"><strong>Subject:</strong></label><br>
           <select id="subjectSelect" style="padding: 8px 12px; border-radius: 6px; border: 1px solid #ccc; font-size: 14px; margin-top: 5px;">
             <option value="maths">Mathematics</option>
+            <option value="english">English</option>
+            <option value="computer">Computer Science</option>
             <option value="science">Science</option>
+            <option value="sst">Social Science</option>
+          </select>
+        </div>
+
+        <div>
+          <label style="color: #1e1e2e;"><strong>Level:</strong></label><br>
+          <select id="levelSelect" style="padding: 8px 12px; border-radius: 6px; border: 1px solid #ccc; font-size: 14px; margin-top: 5px;">
+            <option value="1">Level 1 (Normal)</option>
+            <option value="2">Level 2 (Medium)</option>
+            <option value="3">Level 3 (Hard)</option>
           </select>
         </div>
 
         <div>
           <label style="color: #1e1e2e;"><strong>Questions:</strong></label><br>
           <select id="countSelect" style="padding: 8px 12px; border-radius: 6px; border: 1px solid #ccc; font-size: 14px; margin-top: 5px;">
+            <option value="5">5 Questions</option>
             <option value="10">10 Questions</option>
             <option value="20">20 Questions</option>
-            <option value="30">30 Questions</option>
           </select>
         </div>
 
@@ -76,7 +87,7 @@
       <div id="answers" style="margin: 15px 0;"></div>
       <p id="fb" style="font-weight: bold; font-size: 16px; margin-top: 10px;"></p>
     </div>
-  </section>
+</section>
 
   <script src="script.js"></script>
 </body>
