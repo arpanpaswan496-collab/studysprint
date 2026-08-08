@@ -1,4 +1,4 @@
-// Official NCERT & Study Hub Data (Maths, English, Computer Science)
+// Official NCERT & Computer Hub Data (Maths, English, Computer with 100+ Shortcuts & Full Forms)
 const chapterData = {
   'Mathematics': [
     {
@@ -71,41 +71,101 @@ const chapterData = {
 
   'Computer': [
     {
-      title: "Chapter 1: Basics of Computer System",
-      summary: "Introduction to hardware, software, CPU, and input/output devices.",
+      title: "Chapter 1: Basics of Computer System & Generations",
+      summary: "Core hardware, CPU, memory, and evolution of computers.",
       content: `
-        <h4>📌 Core Components of Computer:</h4>
-        <p>• <b>CPU (Central Processing Unit):</b> Known as the brain of the computer. It has three parts: ALU (Arithmetic Logic Unit), CU (Control Unit), and MU (Memory Unit).</p>
-        <p>• <b>Hardware:</b> Physical and tangible parts of a computer (e.g., Keyboard, Mouse, Monitor, Hard Disk).</p>
-        <p>• <b>Software:</b> Set of instructions or programs that tell the hardware what to do (e.g., Operating System like Windows, MS Office).</p>
+        <h4>📌 Core Components & Generations:</h4>
+        <p>• <b>CPU:</b> Central Processing Unit (Brain of Computer - ALU, CU, MU).</p>
+        <p>• <b>Generations:</b> 1st Gen (Vacuum Tubes) ➔ 2nd Gen (Transistors) ➔ 3rd Gen (ICs) ➔ 4th Gen (Microprocessors) ➔ 5th Gen (AI).</p>
       `
     },
     {
-      title: "Chapter 2: Input and Output Devices",
-      summary: "Understanding peripherals used to interact with a computer.",
+      title: "Chapter 2: 50+ Ultimate Keyboard Shortcuts (A to Z)",
+      summary: "Most important and frequently used computer keyboard shortcuts.",
       content: `
-        <h4>📌 Input & Output:</h4>
-        <p>• <b>Input Devices:</b> Used to send data into the computer (e.g., Keyboard, Mouse, Scanner, Microphone, Webcam).</p>
-        <p>• <b>Output Devices:</b> Used to display or output processed results (e.g., Monitor, Printer, Speaker, Projector).</p>
+        <h4>⌨️ Essential Shortcuts:</h4>
+        <p><b>Ctrl + A:</b> Select All</p>
+        <p><b>Ctrl + B:</b> Bold Text</p>
+        <p><b>Ctrl + C:</b> Copy Selected Item</p>
+        <p><b>Ctrl + D:</b> Bookmark / Fill down in Excel</p>
+        <p><b>Ctrl + E:</b> Center text alignment</p>
+        <p><b>Ctrl + F:</b> Find window</p>
+        <p><b>Ctrl + G:</b> Go to option</p>
+        <p><b>Ctrl + H:</b> Find & Replace</p>
+        <p><b>Ctrl + I:</b> Italicize text</p>
+        <p><b>Ctrl + J:</b> Justify paragraph alignment</p>
+        <p><b>Ctrl + K:</b> Insert Hyperlink</p>
+        <p><b>Ctrl + L:</b> Left align text</p>
+        <p><b>Ctrl + M:</b> Indent paragraph</p>
+        <p><b>Ctrl + N:</b> New document / window</p>
+        <p><b>Ctrl + O:</b> Open file</p>
+        <p><b>Ctrl + P:</b> Print document</p>
+        <p><b>Ctrl + Q:</b> Clear paragraph formatting</p>
+        <p><b>Ctrl + R:</b> Right align text</p>
+        <p><b>Ctrl + S:</b> Save file</p>
+        <p><b>Ctrl + T:</b> Hanging indent</p>
+        <p><b>Ctrl + U:</b> Underline text</p>
+        <p><b>Ctrl + V:</b> Paste copied item</p>
+        <p><b>Ctrl + W:</b> Close current window/tab</p>
+        <p><b>Ctrl + X:</b> Cut selected item</p>
+        <p><b>Ctrl + Y:</b> Redo action</p>
+        <p><b>Ctrl + Z:</b> Undo action</p>
+        <p><b>F1:</b> Help / Support</p>
+        <p><b>F2:</b> Rename selected file/folder</p>
+        <p><b>F3:</b> Search / Find file</p>
+        <p><b>F4:</b> Close window (Alt + F4)</p>
+        <p><b>F5:</b> Refresh webpage / screen</p>
+        <p><b>F11:</b> Full screen mode</p>
+        <p><b>Alt + Tab:</b> Switch between open apps</p>
+        <p><b>Win + D:</b> Show/Hide Desktop</p>
+        <p><b>Win + L:</b> Lock computer screen</p>
       `
     },
     {
-      title: "Chapter 3: Introduction to MS Office & LibreOffice",
-      summary: "Word processors, spreadsheets, and presentation software.",
+      title: "Chapter 3: 50+ Essential Tech Full Forms",
+      summary: "Most common and useful computer abbreviations.",
       content: `
-        <h4>📌 Essential Tools:</h4>
-        <p>• <b>Word Processor (MS Word / Writer):</b> Used for creating letters, reports, and documents.</p>
-        <p>• <b>Spreadsheet (MS Excel / Calc):</b> Used for calculations, data management, and tables using rows and columns.</p>
-        <p>• <b>Presentation (MS PowerPoint / Impress):</b> Used for creating visual slides and presentations.</p>
-      `
-    },
-    {
-      title: "Chapter 4: Introduction to Web & HTML Coding",
-      summary: "Basics of the internet, websites, and HTML tags.",
-      content: `
-        <h4>📌 Web Development Basics:</h4>
-        <p>• <b>Internet & WWW:</b> Internet is a global network of computers; World Wide Web (WWW) is a collection of web pages.</p>
-        <p>• <b>HTML (HyperText Markup Language):</b> Standard language used to create web pages. Uses tags like &lt;html&gt;, &lt;head&gt;, &lt;body&gt;, and &lt;h1&gt;.</p>
+        <h4>📖 Computer Full Forms:</h4>
+        <p>• <b>CPU:</b> Central Processing Unit</p>
+        <p>• <b>RAM:</b> Random Access Memory</p>
+        <p>• <b>ROM:</b> Read Only Memory</p>
+        <p>• <b>BIOS:</b> Basic Input Output System</p>
+        <p>• <b>OS:</b> Operating System</p>
+        <p>• <b>HTML:</b> HyperText Markup Language</p>
+        <p>• <b>CSS:</b> Cascading Style Sheets</p>
+        <p>• <b>HTTP:</b> HyperText Transfer Protocol</p>
+        <p>• <b>HTTPS:</b> HyperText Transfer Protocol Secure</p>
+        <p>• <b>URL:</b> Uniform Resource Locator</p>
+        <p>• <b>IP:</b> Internet Protocol</p>
+        <p>• <b>ISP:</b> Internet Service Provider</p>
+        <p>• <b>USB:</b> Universal Serial Bus</p>
+        <p>• <b>PDF:</b> Portable Document Format</p>
+        <p>• <b>JPEG:</b> Joint Photographic Experts Group</p>
+        <p>• <b>PNG:</b> Portable Network Graphics</p>
+        <p>• <b>SMS:</b> Short Message Service</p>
+        <p>• <b>SIM:</b> Subscriber Identity Module</p>
+        <p>• <b>GPS:</b> Global Positioning System</p>
+        <p>• <b>LED:</b> Light Emitting Diode</p>
+        <p>• <b>LCD:</b> Liquid Crystal Display</p>
+        <p>• <b>OLED:</b> Organic Light Emitting Diode</p>
+        <p>• <b>AI:</b> Artificial Intelligence</p>
+        <p>• <b>IT:</b> Information Technology</p>
+        <p>• <b>PC:</b> Personal Computer</p>
+        <p>• <b>LAN:</b> Local Area Network</p>
+        <p>• <b>WAN:</b> Wide Area Network</p>
+        <p>• <b>MAN:</b> Metropolitan Area Network</p>
+        <p>• <b>WIFI:</b> Wireless Fidelity</p>
+        <p>• <b>VIRUS:</b> Vital Information Resources Under Siege</p>
+        <p>• <b>SSD:</b> Solid State Drive</p>
+        <p>• <b>HDD:</b> Hard Disk Drive</p>
+        <p>• <b>GB:</b> Gigabyte</p>
+        <p>• <b>MB:</b> Megabyte</p>
+        <p>• <b>KB:</b> Kilobyte</p>
+        <p>• <b>TB:</b> Terabyte</p>
+        <p>• <b>CD:</b> Compact Disc</p>
+        <p>• <b>DVD:</b> Digital Versatile Disc</p>
+        <p>• <b>FTP:</b> File Transfer Protocol</p>
+        <p>• <b>VPN:</b> Virtual Private Network</p>
       `
     }
   ],
@@ -134,8 +194,8 @@ function subject(subjectName) {
       <div style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:10px; padding:15px; margin-bottom:12px; text-align:left;">
         <h3 style="color:#0f172a; margin-top:0; font-size:16px;">${chap.title}</h3>
         <p style="color:#475569; font-size:13px; margin-bottom:10px;">${chap.summary}</p>
-        <button onclick="toggleDetails('chap-${idx}')" style="background:#4f46e5; color:white; border:none; padding:8px 12px; border-radius:6px; cursor:pointer; font-weight:600; font-size:13px;">View Chapter Notes 👇</button>
-        <div id="chap-${idx}" style="display:none; margin-top:12px; padding-top:12px; border-top:1px dashed #cbd5e1; color:#1e293b; background:white; padding:12px; border-radius:6px; font-size:14px; line-height:1.5;">
+        <button onclick="toggleDetails('chap-${idx}')" style="background:#4f46e5; color:white; border:none; padding:8px 12px; border-radius:6px; cursor:pointer; font-weight:600; font-size:13px;">View Details 👇</button>
+        <div id="chap-${idx}" style="display:none; margin-top:12px; padding-top:12px; border-top:1px dashed #cbd5e1; color:#1e293b; background:white; padding:12px; border-radius:6px; font-size:14px; line-height:1.6;">
           ${chap.content}
         </div>
       </div>
@@ -174,9 +234,9 @@ const questionBank = {
     { level: 2, q: "What is the midpoint of (-3,0) and (3,0)?", answers: ["(0,0)", "(3,3)", "(-3,3)", "(1,1)"], correct: 0 }
   ],
   computer: [
-    { level: 1, q: "Which part is known as the brain of the computer?", answers: ["Monitor", "CPU", "RAM", "Keyboard"], correct: 1 },
-    { level: 1, q: "Which of the following is an input device?", answers: ["Printer", "Monitor", "Keyboard", "Speaker"], correct: 2 },
-    { level: 2, q: "What does HTML stand for?", answers: ["Hyper Text Markup Language", "High Text Machine Language", "Hyper Tool Multi Language", "None of these"], correct: 0 }
+    { level: 1, q: "Which shortcut key is used to Copy text?", answers: ["Ctrl + V", "Ctrl + C", "Ctrl + X", "Ctrl + Z"], correct: 1 },
+    { level: 1, q: "What does CPU stand for?", answers: ["Central Process Utility", "Central Processing Unit", "Control Program Unit", "Computer Personal Unit"], correct: 1 },
+    { level: 2, q: "Which shortcut key is used to Paste text?", answers: ["Ctrl + C", "Ctrl + V", "Ctrl + P", "Ctrl + S"], correct: 1 }
   ]
 };
 
