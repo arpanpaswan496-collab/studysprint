@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StudySprint - notes, quizzes and useful tools for students.">
+  <title>StudySprint | Learn Smart. Score Better.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#home">Study<span>Sprint</span></a>
+    <nav>
+      <a href="#subjects">Subjects</a>
+      <a href="#quiz">Quiz</a>
+      <a href="#tools">Tools</a>
+    </nav>
+    <button id="themeBtn" class="icon-btn" aria-label="Toggle dark mode">🌙</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div>
+        <p class="badge">📚 Student Learning Hub</p>
+        <h1>Learn Smart.<br><span>Score Better.</span></h1>
+        <p class="hero-text">Notes, MCQs and useful study tools — all in one simple place.</p>
+        <div class="hero-buttons">
+          <a class="btn primary" href="#subjects">Explore Subjects</a>
+          <a class="btn secondary" href="#quiz">Try a Quiz</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="rocket">🚀</div>
+        <h3>Today's Challenge</h3>
+        <p>Test your knowledge with a quick quiz.</p>
+        <a href="#quiz">Start now →</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <div><p class="eyebrow">QUICK ACCESS</p><h2>Choose your class</h2></div>
+      </div>
+      <div class="class-grid">
+        <button class="class-card" onclick="showMessage('Class 9 content is ready to add!')">
+          <span>9</span><div><h3>Class 9</h3><p>Notes • MCQs • Practice</p></div>
+        </button>
+        <button class="class-card" onclick="showMessage('Class 10 content is ready to add!')">
+          <span>10</span><div><h3>Class 10</h3><p>Notes • MCQs • Practice</p></div>
+        </button>
+      </div>
+    </section>
+
+    <section id="subjects" class="section">
+      <div class="section-title">
+        <div><p class="eyebrow">LEARN</p><h2>Popular Subjects</h2></div>
+      </div>
+      <div class="subject-grid">
+        <article class="subject-card"><div class="emoji">🧮</div><h3>Mathematics</h3><p>Formulas, examples and practice questions.</p><button onclick="showMessage('Maths notes coming soon!')">Open →</button></article>
+        <article class="subject-card"><div class="emoji">🔬</div><h3>Science</h3><p>Chapter notes and quick revision.</p><button onclick="showMessage('Science notes coming soon!')">Open →</button></article>
+        <article class="subject-card"><div class="emoji">🌍</div><h3>Social Science</h3><p>History, Geography, Civics and Economics.</p><button onclick="showMessage('SST notes coming soon!')">Open →</button></article>
+        <article class="subject-card"><div class="emoji">📖</div><h3>English</h3><p>Grammar, literature and practice.</p><button onclick="showMessage('English content coming soon!')">Open →</button></article>
+      </div>
+    </section>
+
+    <section id="quiz" class="section quiz-section">
+      <div class="section-title">
+        <div><p class="eyebrow">PRACTICE</p><h2>Quick Quiz</h2></div>
+      </div>
+      <div class="quiz-box">
+        <p class="question-number" id="qNumber">Question 1 of 5</p>
+        <h3 id="question">Loading...</h3>
+        <div id="answers" class="answers"></div>
+        <p id="quizResult" class="quiz-result"></p>
+        <button id="nextBtn" class="btn primary hidden">Next Question</button>
+      </div>
+    </section>
+
+    <section id="tools" class="section">
+      <div class="section-title">
+        <div><p class="eyebrow">TOOLS</p><h2>Student Calculators</h2></div>
+      </div>
+      <div class="tools-grid">
+        <div class="tool-card">
+          <h3>📊 Percentage Calculator</h3>
+          <label>Marks obtained <input id="marks" type="number" min="0"></label>
+          <label>Total marks <input id="total" type="number" min="1"></label>
+          <button class="btn primary" onclick="percentage()">Calculate</button>
+          <p id="percentageResult" class="tool-result"></p>
+        </div>
+        <div class="tool-card">
+          <h3>➗ Average Calculator</h3>
+          <label>Numbers (e.g. 10, 20, 30)<input id="numbers" type="text"></label>
+          <button class="btn primary" onclick="average()">Calculate</button>
+          <p id="averageResult" class="tool-result"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>StudySprint</strong><p>Learn Smart. Score Better.</p></div>
+    <div class="footer-links"><a href="#home">Home</a><a href="#subjects">Subjects</a><a href="#quiz">Quiz</a></div>
+    <p class="copyright">© 2026 StudySprint. Built for students.</p>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
