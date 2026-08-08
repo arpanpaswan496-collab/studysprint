@@ -1,13 +1,106 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="StudySprint Class 9 study hub"><title>StudySprint | Class 9 Study Hub</title><link rel="stylesheet" href="style.css"></head><body>
-<header><a class="logo" href="#">Study<span>Sprint</span></a><nav><a href="#subjects">Subjects</a><a href="#chapters">Chapters</a><a href="#quiz">Quiz</a><a href="#tools">Tools</a></nav><button id="theme">🌙</button></header>
-<section class="hero"><div><b class="badge">📚 Class 9 Study Hub</b><h1>Learn Smart.<br><span>Score Better.</span></h1><p>Chapter-wise study material, MCQs and useful student tools in one place.</p><a class="btn" href="#subjects">Start Learning</a> <a class="btn alt" href="#quiz">Take Quiz</a></div><aside><div>🚀</div><h2>Today's Challenge</h2><p>Answer 10 questions and check your score.</p><a href="#quiz">Start now →</a></aside></section>
-<section id="subjects"><small>EXPLORE</small><h2>Class 9 Subjects</h2><div class="grid subjects">
-<button onclick="subject('Mathematics')">🧮<h3>Mathematics</h3><p>Number Systems, Polynomials, Geometry & more</p></button>
-<button onclick="subject('Science')">🔬<h3>Science</h3><p>Matter, Motion, Force, Cells & more</p></button>
-<button onclick="subject('Social Science')">🌍<h3>Social Science</h3><p>History, Geography, Civics & Economics</p></button>
-<button onclick="subject('English')">📖<h3>English</h3><p>Reading, writing, grammar & literature</p></button></div></section>
-<section id="chapters"><small>STUDY</small><h2 id="ct">Mathematics Chapters</h2><input id="search" placeholder="🔎 Search chapters..." oninput="render()"><div id="chaptersGrid" class="grid chapters"></div></section>
-<section><small>QUICK REVISION</small><h2>Featured Notes</h2><div class="grid notes"><article><b>🧮</b><h3>Number Systems</h3><p>Rational numbers can be written as p/q, q ≠ 0. Irrational numbers cannot be written in this form.</p><button onclick="note('Number Systems')">Read note →</button></article><article><b>⚡</b><h3>Force & Laws of Motion</h3><p>Force can change the state of motion of an object. Newton's laws describe motion and force.</p><button onclick="note('Force & Laws of Motion')">Read note →</button></article><article><b>🌱</b><h3>The Fundamental Unit of Life</h3><p>The cell is the basic structural and functional unit of living organisms.</p><button onclick="note('The Fundamental Unit of Life')">Read note →</button></article></div></section>
-<section id="quiz"><small>PRACTICE</small><h2>Class 9 Quick Quiz</h2><div class="quiz"><div id="qno"></div><h3 id="q"></h3><div id="answers"></div><p id="fb"></p><button class="btn hidden" id="next">Next</button></div></section>
-<section id="tools"><small>USEFUL TOOLS</small><h2>Student Calculators</h2><div class="grid tools"><article><h3>📊 Percentage</h3><input id="m" type="number" placeholder="Marks obtained"><input id="t" type="number" placeholder="Total marks"><button class="btn" onclick="pct()">Calculate</button><p id="po"></p></article><article><h3>➗ Average</h3><input id="n" placeholder="Example: 12, 15, 18"><button class="btn" onclick="avg()">Calculate</button><p id="ao"></p></article></div></section>
-<footer><b>StudySprint</b><span>Learn Smart. Score Better.</span><small>© 2026 StudySprint</small></footer><div id="modal"><div><button onclick="closeNote()">×</button><h2 id="mt"></h2><p id="mb"></p></div></div><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>StudySprint | Class 9 Study Hub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="logo" href="#">Study<span>Sprint</span></a>
+  <nav>
+    <a href="#subjects">Subjects</a>
+    <a href="#notes">Notes</a>
+    <a href="#chapters">Chapters</a>
+    <a href="#quiz">Quiz</a>
+    <a href="#tools">Tools</a>
+  </nav>
+  <button id="theme">🌙</button>
+</header>
+
+<section class="hero">
+  <div>
+    <b class="badge">📚 Class 9 Study Hub</b>
+    <h1>Learn Smart.<br><span>Score Better.</span></h1>
+    <p>Chapter-wise study material, PDF notes, MCQs and useful student tools in one place.</p>
+    <a class="btn" href="#subjects">Start Learning</a>
+    <a class="btn alt" href="#notes">View Notes</a>
+  </div>
+  <aside>
+    <div>🚀</div>
+    <h2>Today's Challenge</h2>
+    <p>Answer 10 questions and check your score.</p>
+    <a href="#quiz">Start now →</a>
+  </aside>
+</section>
+
+<section id="subjects">
+  <small>EXPLORE</small>
+  <h2>Class 9 Subjects</h2>
+  <div class="grid subjects">
+    <button onclick="subject('Mathematics')">🧮<h3>Mathematics</h3><p>Concepts, formulas, chapters & practice</p></button>
+    <button onclick="subject('Science')">🔬<h3>Science</h3><p>Physics, Chemistry, Biology & practice</p></button>
+    <button onclick="subject('Social Science')">🌍<h3>Social Science</h3><p>History, Geography, Civics & Economics</p></button>
+    <button onclick="subject('English')">📖<h3>English</h3><p>Reading, writing, grammar & literature</p></button>
+  </div>
+</section>
+
+<section id="notes">
+  <small>STUDY MATERIAL</small>
+  <h2>Class 9 Notes & PDFs</h2>
+  <p class="section-intro">Open or download your Maths notes directly from StudySprint.</p>
+  <div class="grid notes">
+    <article class="pdf-card">
+      <div class="pdf-icon">📘</div>
+      <h3>Class 9 Mathematics Notes</h3>
+      <p>Your uploaded Maths notes are available as a PDF.</p>
+      <div class="pdf-actions">
+        <a class="btn" href="maths-notes.pdf" target="_blank" rel="noopener">📖 View PDF</a>
+        <a class="btn alt" href="maths-notes.pdf" download>⬇️ Download PDF</a>
+      </div>
+    </article>
+    <article class="pdf-card coming">
+      <div class="pdf-icon">🔬</div>
+      <h3>Class 9 Science Notes</h3>
+      <p>PDF notes coming soon.</p>
+      <span>Coming Soon</span>
+    </article>
+    <article class="pdf-card coming">
+      <div class="pdf-icon">🌍</div>
+      <h3>Class 9 SST Notes</h3>
+      <p>PDF notes coming soon.</p>
+      <span>Coming Soon</span>
+    </article>
+  </div>
+</section>
+
+<section id="chapters">
+  <small>STUDY</small>
+  <h2 id="ct">Mathematics Chapters</h2>
+  <input id="search" placeholder="🔎 Search chapters..." oninput="render()">
+  <div id="chaptersGrid" class="grid chapters"></div>
+</section>
+
+<section id="quiz">
+  <small>PRACTICE</small>
+  <h2>Class 9 Quick Quiz</h2>
+  <div class="quiz">
+    <div id="qno"></div><h3 id="q"></h3><div id="answers"></div><p id="fb"></p>
+    <button class="btn hidden" id="next">Next</button>
+  </div>
+</section>
+
+<section id="tools">
+  <small>USEFUL TOOLS</small>
+  <h2>Student Calculators</h2>
+  <div class="grid tools">
+    <article><h3>📊 Percentage</h3><input id="m" type="number" placeholder="Marks obtained"><input id="t" type="number" placeholder="Total marks"><button class="btn" onclick="pct()">Calculate</button><p id="po"></p></article>
+    <article><h3>➗ Average</h3><input id="n" placeholder="Example: 12, 15, 18"><button class="btn" onclick="avg()">Calculate</button><p id="ao"></p></article>
+  </div>
+</section>
+
+<footer><b>StudySprint</b><span>Learn Smart. Score Better.</span><small>© 2026 StudySprint</small></footer>
+<script src="script.js"></script>
+</body>
+</html>
