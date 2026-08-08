@@ -1,22 +1,8 @@
-STUDYSPRINT V2
-Upload these files to your existing GitHub repository:
-index.html, style.css, script.js
+CHAPTER 2 PDF
 
-New features:
-- Class 9 subject selector
-- Chapter lists for Maths, Science, Social Science and English
-- Chapter search
-- Quick revision notes
-- 10-question quiz
-- Percentage and average calculators
-- Dark mode
-- Mobile responsive layout
+Upload maths-chapter-2.pdf to the same GitHub repository folder as index.html.
 
-To update GitHub Pages:
-1. Open your studysprint repository.
-2. Add file > Upload files.
-3. Upload these 3 files and commit changes.
-4. GitHub Pages will automatically redeploy.
-5. Refresh the live site after a few minutes.
+Then add this card/link to your existing Notes section:
 
-Verify the current syllabus before publishing exam-specific claims, and use original notes/questions.
+<a class="btn" href="maths-chapter-2.pdf" target="_blank">📖 View Chapter 2 PDF</a>
+<a class="btn alt" href="maths-chapter-2.pdf" download>⬇️ Download PDF</a>
