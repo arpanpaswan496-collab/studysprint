@@ -1,4 +1,4 @@
-// Official NCERT Class 9 Mathematics - Ganita Manjari Data
+// Official NCERT Class 9 Data (Maths + Updated English Kaveri)
 const chapterData = {
   'Mathematics': [
     {
@@ -8,118 +8,87 @@ const chapterData = {
         <h4>📌 Key Concepts:</h4>
         <p>• <b>Axes & Origin:</b> Horizontal X-axis and Vertical Y-axis intersect at Origin <b>(0, 0)</b>.</p>
         <p>• <b>Quadrants:</b> Q1 (+, +), Q2 (-, +), Q3 (-, -), Q4 (+, -).</p>
-        <p>• <b>Points on Axes:</b> Point on X-axis is (x, 0) and on Y-axis is (0, y).</p>
-
-        <h4>📐 Distance & Midpoint Rules:</h4>
-        <p>• <b>Distance on Horizontal line:</b> |x₂ - x₁|</p>
-        <p>• <b>Distance on Vertical line:</b> |y₂ - y₁|</p>
         <p>• <b>Midpoint Formula:</b> M = ((x₁ + x₂)/2, (y₁ + y₂)/2)</p>
-
-        <h4>💡 Solved Example:</h4>
-        <p><b>Q. Find the midpoint of S(-3, 0) and T(3, 0).</b><br>
-        <i>Solution:</i> x = (-3 + 3)/2 = 0, y = (0 + 0)/2 = 0.<br>
-        So, Midpoint <b>M = (0, 0)</b> (Origin).</p>
       `
     },
     {
       title: "Chapter 2: Introduction to Linear Polynomials",
-      summary: "Linear expressions, evaluating polynomials, word problems & growing patterns.",
-      content: `
-        <h4>📌 Key Concepts:</h4>
-        <p>• <b>Linear Polynomial:</b> Degree 1 expression, e.g., P(x) = ax + b (where a ≠ 0).</p>
-        <p>• <b>Quadratic Polynomial:</b> Degree 2 expression, e.g., ax² + bx + c.</p>
-
-        <h4>💡 Solved Examples:</h4>
-        <p><b>Example 1: Find value of 5x - 3 when x = -1.</b><br>
-        <i>Solution:</i> 5(-1) - 3 = -5 - 3 = <b>-8</b>.</p>
-
-        <p><b>Example 2:</b> Salil's mother is 3 times his age. After 5 years, sum of ages is 70.<br>
-        <i>Solution:</i> Let Salil = x, Mother = 3x.<br>
-        (x + 5) + (3x + 5) = 70 ➔ 4x + 10 = 70 ➔ 4x = 60 ➔ x = 15.<br>
-        Salil = <b>15 years</b>, Mother = <b>45 years</b>.</p>
-      `
+      summary: "Linear expressions, evaluating polynomials & word problems.",
+      content: `<p>Linear polynomial standard form: P(x) = ax + b (where a ≠ 0).</p>`
     },
     {
       title: "Chapter 3: The World of Numbers",
       summary: "Rational & Irrational numbers, Square Root Spiral, History of Zero & Pi (π).",
-      content: `
-        <h4>📌 Number Classifications:</h4>
-        <p>• <b>Rational (Q):</b> Can be written as p/q (q ≠ 0). Decimals are terminating or recurring.</p>
-        <p>• <b>Irrational:</b> Cannot be written as p/q. Non-terminating & non-recurring decimals (e.g., √2, √3, π).</p>
-
-        <h4>🏛️ Historical Note:</h4>
-        <p>• <b>Zero (Śhūnya):</b> Formalised in India by <b>Brahmagupta (629 CE)</b>.</p>
-        <p>• <b>Value of π:</b> Āryabhaṭa (499 CE) gave π ≈ 62832/20000 = 3.1416.</p>
-
-        <h4>💡 Constructing √2 on Number Line:</h4>
-        <p>Draw right triangle with base OA = 1 unit and height AB = 1 unit.<br>
-        By Pythagoras theorem: OB = √(1² + 1²) = √2. Arc from O with radius OB gives √2 on number line.</p>
-      `
+      content: `<p>Irrational numbers are non-terminating and non-recurring (e.g. √2, √3, π).</p>`
     },
     {
       title: "Chapter 4: Exploring Algebraic Identities",
-      summary: "Visual proofs and factorisation using standard algebraic identities.",
-      content: `
-        <h4>📌 Core Identities:</h4>
-        <p>1. (a + b)² = a² + 2ab + b²</p>
-        <p>2. (a - b)² = a² - 2ab + b²</p>
-        <p>3. a² - b² = (a + b)(a - b)</p>
-        <p>4. (x + a)(x + b) = x² + (a + b)x + ab</p>
-      `
+      summary: "Standard identities: (a+b)², (a-b)², a²-b².",
+      content: `<p>Identities help in fast factorisation and geometric proofs.</p>`
     },
     {
       title: "Chapter 5: I'm Up and Down, and Round and Round",
-      summary: "Properties of circles, equal chords, subtended angles and cyclic quadrilaterals.",
-      content: `
-        <h4>📌 Theorems & Properties:</h4>
-        <p>• Equal chords of a circle subtend equal angles at the centre.</p>
-        <p>• Perpendicular from the centre to a chord bisects the chord.</p>
-        <p>• Angle subtended by an arc at centre is double the angle subtended at remaining circumference.</p>
-      `
+      summary: "Properties of circles, chords and subtended angles.",
+      content: `<p>Equal chords of a circle subtend equal angles at the centre.</p>`
     },
     {
       title: "Chapter 6: Measuring Space: Perimeter and Area",
-      summary: "Perimeter and area of triangles, quadrilaterals, circles & composite shapes.",
-      content: `
-        <h4>📐 Formulas:</h4>
-        <p>• <b>Heron's Formula:</b> Area = √[s(s-a)(s-b)(s-c)] where s = (a+b+c)/2.</p>
-        <p>• <b>Circle Area:</b> πr², <b>Circumference:</b> 2πr.</p>
-      `
+      summary: "Heron's Formula & area of geometric shapes.",
+      content: `<p>Heron's Formula: Area = √[s(s-a)(s-b)(s-c)] where s = (a+b+c)/2.</p>`
     },
     {
-      title: "Chapter 7: The Mathematics of Maybe: Introduction to Probability",
-      summary: "Understanding chance, outcomes, empirical probability & tree diagrams.",
-      content: `
-        <h4>📌 Probability Formula:</h4>
-        <p><b>P(E) = (Favourable Outcomes) / (Total Outcomes)</b></p>
-        <p>• Probability always lies between <b>0 and 1</b> (0 ≤ P(E) ≤ 1).</p>
-      `
+      title: "Chapter 7: The Mathematics of Maybe: Probability",
+      summary: "Understanding chance and calculating probability.",
+      content: `<p>P(E) = (Favourable Outcomes) / (Total Outcomes). Value lies between 0 and 1.</p>`
     },
     {
       title: "Chapter 8: Predicting What Comes Next: Sequences & Progressions",
-      summary: "Arithmetic Progressions (AP), Geometric Progressions (GP) & Virahānka-Fibonacci sequence.",
+      summary: "Arithmetic Progression (AP), GP & Virahānka-Fibonacci sequence.",
+      content: `<p>AP n-th term: tₙ = a + (n - 1)d. Fibonacci: 1, 2, 3, 5, 8, 13...</p>`
+    }
+  ],
+
+  'English': [
+    {
+      title: "Unit 1: How I Taught My Grandmother to Read",
+      summary: "Author: Sudha Murty | A story of determination, literacy, and respect for a teacher.",
       content: `
-        <h4>📌 Sequences Overview:</h4>
-        <p>• <b>Arithmetic Progression (AP):</b> a, a+d, a+2d, ...<br>
-        n-th term: tₙ = a + (n - 1)d<br>
-        Sum of first n natural numbers: Sₙ = n(n + 1)/2</p>
+        <h4>📌 Theme & Summary:</h4>
+        <p>The 12-year-old narrator lives in north Karnataka with her 62-year-old grandmother, <b>Krishtakka (Avva)</b>. Every week, the narrator reads the serial story <i>Kashi Yatre</i> from the weekly magazine <i>Karmaveera</i> to her illiterate grandmother.</p>
+        <p>When the narrator goes away for a week to a wedding, Avva feels completely helpless and illiterate because she cannot read the latest episode on her own.</p>
 
-        <p>• <b>Geometric Progression (GP):</b> a, ar, ar², ...<br>
-        n-th term: tₙ = a · rⁿ⁻¹</p>
+        <h4>📌 Important Quote & Determination:</h4>
+        <p><i>"For a good cause if you are determined, you can overcome any obstacle. For learning there is no age bar."</i> - Avva sets Dassara (Saraswati Puja) as her deadline to learn the Kannada alphabet.</p>
 
-        <p>• <b>Virahānka-Fibonacci Sequence:</b> 1, 2, 3, 5, 8, 13, 21, ...<br>
-        Recursive Rule: Vₙ = Vₙ₋₁ + Vₙ₋₂</p>
+        <h4>💡 Key Climax:</h4>
+        <p>By Dassara, Avva successfully learns to read the novel <i>Kashi Yatre</i>. In a deeply moving gesture, she touches her 12-year-old granddaughter's feet—not as a granddaughter, but as a respectful tribute to her <b>teacher</b>.</p>
+      `
+    },
+    {
+      title: "Unit 2: The Pot Maker",
+      summary: "Author: Temsula Ao | Story of a young girl's passion for traditional pottery.",
+      content: `
+        <h4>📌 Summary & Theme:</h4>
+        <p>Sentila, a young girl, secretly observes her mother Arenla making clay pots and desires to learn the craft. Despite social hurdles, illness, and reluctance from adults, Sentila shows immense passion and perseverance to master the traditional art of pottery.</p>
+        <p><b>Theme:</b> Transmission of ancestral art, perseverance, and passion across generations.</p>
+      `
+    },
+    {
+      title: "Unit 3: Vitamin-M",
+      summary: "Author: Asha Nehemiah | Humorous & emotional story on elderly dignity.",
+      content: `
+        <h4>📌 Summary & Theme:</h4>
+        <p>Ravi's grandfather is brought to live in a crowded city flat because of his old age and supposed memory loss. Ravi follows his grandfather around the city as a secret detective, only to realise that his grandfather is sharp, independent, and full of life.</p>
+        <p><b>Theme:</b> Dignity, respect, empathy, and self-reliance for senior citizens in society.</p>
       `
     }
   ],
+
   'Science': [
-    { title: "Chapter 1: Matter in Our Surroundings", summary: "Physical nature of matter, states of matter & evaporation.", content: "<p>Detail notes for Science Chapter 1.</p>" }
+    { title: "Chapter 1: Matter in Our Surroundings", summary: "Physical nature of matter & states.", content: "<p>Science content will be updated next!</p>" }
   ],
   'Social Science': [
-    { title: "History Ch 1: The French Revolution", summary: "18th century French society & revolution.", content: "<p>Detail notes for SST Chapter 1.</p>" }
-  ],
-  'English': [
-    { title: "Beehive Ch 1: The Fun They Had", summary: "Future school system in year 2157.", content: "<p>Detail notes for English Chapter 1.</p>" }
+    { title: "History Ch 1: The French Revolution", summary: "18th century French society & revolution.", content: "<p>SST content will be updated next!</p>" }
   ]
 };
 
@@ -178,9 +147,10 @@ const questionBank = {
     { level: 1, q: "What is the degree of a zero polynomial?", answers: ["0", "1", "Any real number", "Not defined"], correct: 3 },
     { level: 2, q: "What is the midpoint of (-3,0) and (3,0)?", answers: ["(0,0)", "(3,3)", "(-3,3)", "(1,1)"], correct: 0 }
   ],
-  science: [
-    { level: 1, q: "What is the SI unit of acceleration?", answers: ["m/s", "m/s²", "m", "kg m/s"], correct: 1 },
-    { level: 1, q: "Powerhouse of the cell is:", answers: ["Golgi body", "Mitochondria", "Lysosome", "Plastid"], correct: 1 }
+  english: [
+    { level: 1, q: "What was the age of Krishtakka (Avva) in the story?", answers: ["50 years", "62 years", "70 years", "80 years"], correct: 1 },
+    { level: 1, q: "What deadline did Avva set to learn reading?", answers: ["Diwali", "Dassara (Saraswati Puja)", "New Year", "Holi"], correct: 1 },
+    { level: 2, q: "Why did Avva touch her granddaughter's feet?", answers: ["Because she was older", "As a mark of respect to her teacher", "For blessings", "By mistake"], correct: 1 }
   ]
 };
 
