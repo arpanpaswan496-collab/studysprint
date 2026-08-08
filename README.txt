@@ -1,22 +1,22 @@
-STUDYSPRINT - QUICK START
+STUDYSPRINT V2
+Upload these files to your existing GitHub repository:
+index.html, style.css, script.js
 
-1. Keep index.html, style.css and script.js in the same folder.
-2. Double-click index.html to preview the site in your browser.
-3. To publish free:
-   - Create a GitHub account.
-   - Create a NEW PUBLIC repository named studysprint.
-   - Upload index.html, style.css and script.js.
-   - Open Settings > Pages.
-   - Under Build and deployment, choose "Deploy from a branch".
-   - Select branch "main" and folder "/ (root)".
-   - Save.
-   - GitHub will show your public website URL after deployment.
+New features:
+- Class 9 subject selector
+- Chapter lists for Maths, Science, Social Science and English
+- Chapter search
+- Quick revision notes
+- 10-question quiz
+- Percentage and average calculators
+- Dark mode
+- Mobile responsive layout
 
-CUSTOMIZE:
-- Change the website name/tagline in index.html.
-- Add notes and chapters inside index.html.
-- Add more quiz questions in script.js.
-- Change colors in style.css.
+To update GitHub Pages:
+1. Open your studysprint repository.
+2. Add file > Upload files.
+3. Upload these 3 files and commit changes.
+4. GitHub Pages will automatically redeploy.
+5. Refresh the live site after a few minutes.
 
-IMPORTANT:
-For ads/monetization, first build useful original content and visitors. Check the current eligibility and age/payment requirements of the advertising platform and use a parent/guardian where required.
+Verify the current syllabus before publishing exam-specific claims, and use original notes/questions.
