@@ -1,4 +1,4 @@
-// Official NCERT Class 9 Data (Maths + Updated English Kaveri)
+// Official NCERT & Study Hub Data (Maths, English, Computer Science)
 const chapterData = {
   'Mathematics': [
     {
@@ -54,41 +54,67 @@ const chapterData = {
       summary: "Author: Sudha Murty | A story of determination, literacy, and respect for a teacher.",
       content: `
         <h4>📌 Theme & Summary:</h4>
-        <p>The 12-year-old narrator lives in north Karnataka with her 62-year-old grandmother, <b>Krishtakka (Avva)</b>. Every week, the narrator reads the serial story <i>Kashi Yatre</i> from the weekly magazine <i>Karmaveera</i> to her illiterate grandmother.</p>
-        <p>When the narrator goes away for a week to a wedding, Avva feels completely helpless and illiterate because she cannot read the latest episode on her own.</p>
-
-        <h4>📌 Important Quote & Determination:</h4>
-        <p><i>"For a good cause if you are determined, you can overcome any obstacle. For learning there is no age bar."</i> - Avva sets Dassara (Saraswati Puja) as her deadline to learn the Kannada alphabet.</p>
-
-        <h4>💡 Key Climax:</h4>
-        <p>By Dassara, Avva successfully learns to read the novel <i>Kashi Yatre</i>. In a deeply moving gesture, she touches her 12-year-old granddaughter's feet—not as a granddaughter, but as a respectful tribute to her <b>teacher</b>.</p>
+        <p>The 12-year-old narrator reads the serial story <i>Kashi Yatre</i> to her 62-year-old grandmother, Krishtakka (Avva). When Avva sets a deadline to learn the Kannada alphabet by Dassara, she successfully learns to read and touches her granddaughter's feet as a mark of respect to her <b>teacher</b>.</p>
       `
     },
     {
       title: "Unit 2: The Pot Maker",
       summary: "Author: Temsula Ao | Story of a young girl's passion for traditional pottery.",
-      content: `
-        <h4>📌 Summary & Theme:</h4>
-        <p>Sentila, a young girl, secretly observes her mother Arenla making clay pots and desires to learn the craft. Despite social hurdles, illness, and reluctance from adults, Sentila shows immense passion and perseverance to master the traditional art of pottery.</p>
-        <p><b>Theme:</b> Transmission of ancestral art, perseverance, and passion across generations.</p>
-      `
+      content: `<p>Sentila shows immense passion and perseverance to master the traditional art of pottery despite social hurdles.</p>`
     },
     {
       title: "Unit 3: Vitamin-M",
       summary: "Author: Asha Nehemiah | Humorous & emotional story on elderly dignity.",
+      content: `<p>Ravi's grandfather proves that senior citizens are independent, sharp, and full of life.</p>`
+    }
+  ],
+
+  'Computer': [
+    {
+      title: "Chapter 1: Basics of Computer System",
+      summary: "Introduction to hardware, software, CPU, and input/output devices.",
       content: `
-        <h4>📌 Summary & Theme:</h4>
-        <p>Ravi's grandfather is brought to live in a crowded city flat because of his old age and supposed memory loss. Ravi follows his grandfather around the city as a secret detective, only to realise that his grandfather is sharp, independent, and full of life.</p>
-        <p><b>Theme:</b> Dignity, respect, empathy, and self-reliance for senior citizens in society.</p>
+        <h4>📌 Core Components of Computer:</h4>
+        <p>• <b>CPU (Central Processing Unit):</b> Known as the brain of the computer. It has three parts: ALU (Arithmetic Logic Unit), CU (Control Unit), and MU (Memory Unit).</p>
+        <p>• <b>Hardware:</b> Physical and tangible parts of a computer (e.g., Keyboard, Mouse, Monitor, Hard Disk).</p>
+        <p>• <b>Software:</b> Set of instructions or programs that tell the hardware what to do (e.g., Operating System like Windows, MS Office).</p>
+      `
+    },
+    {
+      title: "Chapter 2: Input and Output Devices",
+      summary: "Understanding peripherals used to interact with a computer.",
+      content: `
+        <h4>📌 Input & Output:</h4>
+        <p>• <b>Input Devices:</b> Used to send data into the computer (e.g., Keyboard, Mouse, Scanner, Microphone, Webcam).</p>
+        <p>• <b>Output Devices:</b> Used to display or output processed results (e.g., Monitor, Printer, Speaker, Projector).</p>
+      `
+    },
+    {
+      title: "Chapter 3: Introduction to MS Office & LibreOffice",
+      summary: "Word processors, spreadsheets, and presentation software.",
+      content: `
+        <h4>📌 Essential Tools:</h4>
+        <p>• <b>Word Processor (MS Word / Writer):</b> Used for creating letters, reports, and documents.</p>
+        <p>• <b>Spreadsheet (MS Excel / Calc):</b> Used for calculations, data management, and tables using rows and columns.</p>
+        <p>• <b>Presentation (MS PowerPoint / Impress):</b> Used for creating visual slides and presentations.</p>
+      `
+    },
+    {
+      title: "Chapter 4: Introduction to Web & HTML Coding",
+      summary: "Basics of the internet, websites, and HTML tags.",
+      content: `
+        <h4>📌 Web Development Basics:</h4>
+        <p>• <b>Internet & WWW:</b> Internet is a global network of computers; World Wide Web (WWW) is a collection of web pages.</p>
+        <p>• <b>HTML (HyperText Markup Language):</b> Standard language used to create web pages. Uses tags like &lt;html&gt;, &lt;head&gt;, &lt;body&gt;, and &lt;h1&gt;.</p>
       `
     }
   ],
 
   'Science': [
-    { title: "Chapter 1: Matter in Our Surroundings", summary: "Physical nature of matter & states.", content: "<p>Science content will be updated next!</p>" }
+    { title: "Chapter 1: Matter in Our Surroundings", summary: "Physical nature of matter & states.", content: "<p>Science content will be updated soon!</p>" }
   ],
   'Social Science': [
-    { title: "History Ch 1: The French Revolution", summary: "18th century French society & revolution.", content: "<p>SST content will be updated next!</p>" }
+    { title: "History Ch 1: The French Revolution", summary: "18th century French society & revolution.", content: "<p>SST content will be updated soon!</p>" }
   ]
 };
 
@@ -101,7 +127,7 @@ function subject(subjectName) {
     return;
   }
 
-  let contentHtml = `<h2 style="color:#4f46e5; margin-bottom:15px; border-bottom:2px solid #e2e8f0; padding-bottom:8px;">📚 Class 9 ${subjectName} (NCERT)</h2>`;
+  let contentHtml = `<h2 style="color:#4f46e5; margin-bottom:15px; border-bottom:2px solid #e2e8f0; padding-bottom:8px;">📚 Class 9 ${subjectName} Hub</h2>`;
   
   chapters.forEach((chap, idx) => {
     contentHtml += `
@@ -147,10 +173,10 @@ const questionBank = {
     { level: 1, q: "What is the degree of a zero polynomial?", answers: ["0", "1", "Any real number", "Not defined"], correct: 3 },
     { level: 2, q: "What is the midpoint of (-3,0) and (3,0)?", answers: ["(0,0)", "(3,3)", "(-3,3)", "(1,1)"], correct: 0 }
   ],
-  english: [
-    { level: 1, q: "What was the age of Krishtakka (Avva) in the story?", answers: ["50 years", "62 years", "70 years", "80 years"], correct: 1 },
-    { level: 1, q: "What deadline did Avva set to learn reading?", answers: ["Diwali", "Dassara (Saraswati Puja)", "New Year", "Holi"], correct: 1 },
-    { level: 2, q: "Why did Avva touch her granddaughter's feet?", answers: ["Because she was older", "As a mark of respect to her teacher", "For blessings", "By mistake"], correct: 1 }
+  computer: [
+    { level: 1, q: "Which part is known as the brain of the computer?", answers: ["Monitor", "CPU", "RAM", "Keyboard"], correct: 1 },
+    { level: 1, q: "Which of the following is an input device?", answers: ["Printer", "Monitor", "Keyboard", "Speaker"], correct: 2 },
+    { level: 2, q: "What does HTML stand for?", answers: ["Hyper Text Markup Language", "High Text Machine Language", "Hyper Tool Multi Language", "None of these"], correct: 0 }
   ]
 };
 
