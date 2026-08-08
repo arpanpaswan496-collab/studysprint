@@ -84,6 +84,46 @@
 
 <section id="quiz">
   <small>PRACTICE</small>
+  <h2>Class 9 Adaptive Quiz</h2>
+
+  <div id="quiz-setup" style="background: #ffffff; padding: 20px; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+    <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; margin-bottom: 15px;">
+      
+      <div>
+        <label><strong>Subject:</strong></label><br>
+        <select id="subjectSelect" style="padding: 8px 12px; border-radius: 6px; border: 1px solid #ccc; font-size: 14px;">
+          <option value="maths">Mathematics</option>
+          <option value="science">Science</option>
+          <option value="sst">Social Science</option>
+          <option value="english">English</option>
+        </select>
+      </div>
+
+      <div>
+        <label><strong>Questions:</strong></label><br>
+        <select id="countSelect" style="padding: 8px 12px; border-radius: 6px; border: 1px solid #ccc; font-size: 14px;">
+          <option value="10">10 Questions</option>
+          <option value="20">20 Questions</option>
+          <option value="30">30 Questions</option>
+          <option value="50">50 Questions</option>
+          <option value="100">100 Questions</option>
+        </select>
+      </div>
+
+    </div>
+
+    <button onclick="startCustomQuiz()" class="btn" style="background: #6366f1; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: 600;">Start Quiz 🚀</button>
+  </div>
+
+  <div id="quiz-container" class="quiz" style="display: none;">
+    <div id="qno"></div>
+    <h3 id="q"></h3>
+    <div id="answers"></div>
+    <p id="fb"></p>
+    <button class="btn hidden" id="next">Next</button>
+  </div>
+</section>
+  <small>PRACTICE</small>
   <h2>Class 9 Quick Quiz</h2>
   <div class="quiz">
     <div id="qno"></div><h3 id="q"></h3><div id="answers"></div><p id="fb"></p>
