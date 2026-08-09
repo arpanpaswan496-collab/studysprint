@@ -16,9 +16,114 @@ const chapterData = {
     { title: "Unit 3: Vitamin-M", summary: "Asha Nehemiah | Elderly dignity and family bonds.", content: `<p>Grandfather's active and independent life in the city.</p>` }
   ],
   'Computer': [
-    { title: "Chapter 1: Basics & Generations", summary: "Hardware, CPU and computer generations.", content: `<p>CPU has ALU, CU and MU. Generations range from Vacuum Tubes to AI.</p>` },
-    { title: "Chapter 2: 50+ Keyboard Shortcuts", summary: "Essential shortcuts from A to Z.", content: `<p>Ctrl+C (Copy), Ctrl+V (Paste), Ctrl+Z (Undo), F5 (Refresh).</p>` },
-    { title: "Chapter 3: 50+ Tech Full Forms", summary: "Common computer abbreviations.", content: `<p>CPU, RAM, ROM, HTML, URL, USB, PDF, LAN, WAN.</p>` }
+    {
+      title: "Chapter 1: Basics & Generations of Computer",
+      summary: "Hardware, CPU, memory, and evolution of computers.",
+      content: `
+        <h4>📌 Core Components & Generations:</h4>
+        <p>• <b>CPU:</b> Central Processing Unit (Brain of Computer - ALU, CU, MU).</p>
+        <p>• <b>Generations:</b> 1st Gen (Vacuum Tubes) ➔ 2nd Gen (Transistors) ➔ 3rd Gen (ICs) ➔ 4th Gen (Microprocessors) ➔ 5th Gen (AI).</p>
+      `
+    },
+    {
+      title: "Chapter 2: Printing Documents in Word Processor",
+      summary: "Complete guide on Print Options, Print Preview, and Printing steps.",
+      content: `
+        <h4>🖨️ Printing Guide:</h4>
+        <p>• <b>Shortcut:</b> Ctrl + P<br>
+        • <b>Print Preview:</b> Print se pehle page ka layout check karna taaki ink/paper waste na ho.<br>
+        • <b>Options:</b> Copies, Printer selection, Pages range (All/Current/Custom), aur Orientation (Portrait/Landscape).</p>
+      `
+    },
+    {
+      title: "Chapter 3: 50+ Ultimate Keyboard Shortcuts (A to Z)",
+      summary: "All essential and frequently used computer keyboard shortcuts.",
+      content: `
+        <h4>⌨️ Essential Shortcuts:</h4>
+        <p><b>Ctrl + A:</b> Select All</p>
+        <p><b>Ctrl + B:</b> Bold Text</p>
+        <p><b>Ctrl + C:</b> Copy Selected Item</p>
+        <p><b>Ctrl + D:</b> Bookmark / Fill down in Excel</p>
+        <p><b>Ctrl + E:</b> Center text alignment</p>
+        <p><b>Ctrl + F:</b> Find window</p>
+        <p><b>Ctrl + G:</b> Go to option</p>
+        <p><b>Ctrl + H:</b> Find & Replace</p>
+        <p><b>Ctrl + I:</b> Italicize text</p>
+        <p><b>Ctrl + J:</b> Justify paragraph alignment</p>
+        <p><b>Ctrl + K:</b> Insert Hyperlink</p>
+        <p><b>Ctrl + L:</b> Left align text</p>
+        <p><b>Ctrl + M:</b> Indent paragraph</p>
+        <p><b>Ctrl + N:</b> New document / window</p>
+        <p><b>Ctrl + O:</b> Open file</p>
+        <p><b>Ctrl + P:</b> Print document</p>
+        <p><b>Ctrl + Q:</b> Clear paragraph formatting</p>
+        <p><b>Ctrl + R:</b> Right align text</p>
+        <p><b>Ctrl + S:</b> Save file</p>
+        <p><b>Ctrl + T:</b> Hanging indent</p>
+        <p><b>Ctrl + U:</b> Underline text</p>
+        <p><b>Ctrl + V:</b> Paste copied item</p>
+        <p><b>Ctrl + W:</b> Close current window/tab</p>
+        <p><b>Ctrl + X:</b> Cut selected item</p>
+        <p><b>Ctrl + Y:</b> Redo action</p>
+        <p><b>Ctrl + Z:</b> Undo action</p>
+        <p><b>F1:</b> Help / Support</p>
+        <p><b>F2:</b> Rename selected file/folder</p>
+        <p><b>F3:</b> Search / Find file</p>
+        <p><b>F4:</b> Close window (Alt + F4)</p>
+        <p><b>F5:</b> Refresh webpage / screen</p>
+        <p><b>F11:</b> Full screen mode</p>
+        <p><b>Alt + Tab:</b> Switch between open apps</p>
+        <p><b>Win + D:</b> Show/Hide Desktop</p>
+        <p><b>Win + L:</b> Lock computer screen</p>
+      `
+    },
+    {
+      title: "Chapter 4: 50+ Essential Tech Full Forms",
+      summary: "Most common and useful computer abbreviations.",
+      content: `
+        <h4>📖 Computer Full Forms:</h4>
+        <p>• <b>CPU:</b> Central Processing Unit</p>
+        <p>• <b>RAM:</b> Random Access Memory</p>
+        <p>• <b>ROM:</b> Read Only Memory</p>
+        <p>• <b>BIOS:</b> Basic Input Output System</p>
+        <p>• <b>OS:</b> Operating System</p>
+        <p>• <b>HTML:</b> HyperText Markup Language</p>
+        <p>• <b>CSS:</b> Cascading Style Sheets</p>
+        <p>• <b>HTTP:</b> HyperText Transfer Protocol</p>
+        <p>• <b>HTTPS:</b> HyperText Transfer Protocol Secure</p>
+        <p>• <b>URL:</b> Uniform Resource Locator</p>
+        <p>• <b>IP:</b> Internet Protocol</p>
+        <p>• <b>ISP:</b> Internet Service Provider</p>
+        <p>• <b>USB:</b> Universal Serial Bus</p>
+        <p>• <b>PDF:</b> Portable Document Format</p>
+        <p>• <b>JPEG:</b> Joint Photographic Experts Group</p>
+        <p>• <b>PNG:</b> Portable Network Graphics</p>
+        <p>• <b>SMS:</b> Short Message Service</p>
+        <p>• <b>SIM:</b> Subscriber Identity Module</p>
+        <p>• <b>GPS:</b> Global Positioning System</p>
+        <p>• <b>LED:</b> Light Emitting Diode</p>
+        <p>• <b>LCD:</b> Liquid Crystal Display</p>
+        <p>• <b>OLED:</b> Organic Light Emitting Diode</p>
+        <p>• <b>AI:</b> Artificial Intelligence</p>
+        <p>• <b>IT:</b> Information Technology</p>
+        <p>• <b>PC:</b> Personal Computer</p>
+        <p>• <b>LAN:</b> Local Area Network</p>
+        <p>• <b>WAN:</b> Wide Area Network</p>
+        <p>• <b>MAN:</b> Metropolitan Area Network</p>
+        <p>• <b>WIFI:</b> Wireless Fidelity</p>
+        <p>• <b>VIRUS:</b> Vital Information Resources Under Siege</p>
+        <p>• <b>SSD:</b> Solid State Drive</p>
+        <p>• <b>HDD:</b> Hard Disk Drive</p>
+        <p>• <b>GB:</b> Gigabyte</p>
+        <p>• <b>MB:</b> Megabyte</p>
+        <p>• <b>KB:</b> Kilobyte</p>
+        <p>• <b>TB:</b> Terabyte</p>
+        <p>• <b>CD:</b> Compact Disc</p>
+        <p>• <b>DVD:</b> Digital Versatile Disc</p>
+        <p>• <b>FTP:</b> File Transfer Protocol</p>
+        <p>• <b>VPN:</b> Virtual Private Network</p>
+      `
+    }
   ],
   'Science': [
     { title: "Chapter 1: Matter in Our Surroundings", summary: "States of matter, evaporation and characteristics.", content: `<p>Matter is made of tiny particles. Three states: Solid, Liquid, Gas.</p>` },
