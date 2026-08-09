@@ -1,18 +1,4 @@
-/* --- Global Styles & CSS Variables --- */
-:root {
-  --bg-color: #f7f9fc;
-  --text-color: #172033;
-  --card-bg: #ffffff;
-  --primary-color: #6366f1;
-}
-
-[data-theme="dark"] {
-  --bg-color: #0f172a;
-  --text-color: #f8fafc;
-  --card-bg: #1e293b;
-  --primary-color: #818cf8;
-}
-
+/* --- Global Styles --- */
 * {
   box-sizing: border-box;
 }
@@ -24,35 +10,65 @@ html {
 body {
   margin: 0;
   font-family: system-ui, -Segoe UI, sans-serif;
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background-color: #f7f9fc;
+  color: #172033;
   line-height: 1.6;
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* --- Profile Photo Fix (Circle Banner) --- */
+/* --- Main Layout & Hero Section --- */
+header {
+  background: #ffffff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* --- Today's Challenge Box (Purple Card) --- */
+aside {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+  width: 320px;
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
+  text-align: left;
+  margin: 20px 0;
+}
+
+aside h2 {
+  margin-top: 0;
+  color: #ffffff;
+}
+
+aside p {
+  color: #ffffff !important;
+}
+
+aside a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* --- Profile Photo Fix inside Purple Box --- */
 aside img {
-  width: 80px !important;
-  height: 80px !important;
+  width: 70px !important;
+  height: 70px !important;
   border-radius: 50% !important;
   object-fit: cover !important;
-  object-position: center top !important; /* Isse face ya photo ka main hissa cut nahi hoga, bilkul center mein aayega */
+  object-position: center top !important;
   display: block;
-  margin: 0 auto 10px auto;
-}
-
-/* --- Card & Section Styling for Dark Mode Support --- */
-section, .card, aside, div {
-  background-color: var(--card-bg);
-  color: var(--text-color);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-bottom: 15px;
+  border: 2px solid white;
 }
 
 /* --- Buttons --- */
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: var(--primary-color);
+  background-color: #6366f1;
   color: white;
   border-radius: 8px;
   text-decoration: none;
