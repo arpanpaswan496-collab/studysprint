@@ -1,4 +1,4 @@
-// Official NCERT & Computer Hub Data (Maths, English, Computer, Science, SST)
+// Official NCERT & Study Hub Data (Maths, English, Computer, Science, SST)
 const chapterData = {
   'Mathematics': [
     { title: "Chapter 1: Coordinates", summary: "Cartesian plane, locating points & midpoint formula.", content: `<p>• Origin: (0,0)<br>• Midpoint Formula: ((x₁+x₂)/2, (y₁+y₂)/2)</p>` },
@@ -30,9 +30,9 @@ const chapterData = {
       summary: "Complete guide on Print Options, Print Preview, and Printing steps.",
       content: `
         <h4>🖨️ Printing Guide:</h4>
-        <p>• <b>Shortcut:</b> Ctrl + P<br>
-        • <b>Print Preview:</b> Print se pehle page ka layout check karna taaki ink/paper waste na ho.<br>
-        • <b>Options:</b> Copies, Printer selection, Pages range (All/Current/Custom), aur Orientation (Portrait/Landscape).</p>
+        <p>• <b>Shortcut:</b> Ctrl + P</p>
+        <p>• <b>Print Preview:</b> Print se pehle page ka layout check karna taaki ink/paper waste na ho.</p>
+        <p>• <b>Options:</b> Copies, Printer selection, Pages range (All/Current/Custom), aur Orientation (Portrait/Landscape).</p>
       `
     },
     {
@@ -235,10 +235,7 @@ function startCustomQuiz() {
   
   let pool = questionBank[subjectSelect] || [];
   
-  // Pehle selected level ke questions filter karo
   let filteredPool = pool.filter(q => q.level === levelSelect);
-  
-  // Agar us level mein kam questions hain, toh baaki pool se le lo taaki user ki select ki hui limit (5, 10, 20) poori ho sake
   if (filteredPool.length < count) {
     let remainingPool = pool.filter(q => q.level !== levelSelect);
     filteredPool = filteredPool.concat(remainingPool);
@@ -298,50 +295,3 @@ function checkAnswer(selected, correct) {
     }
   }, 1000);
 }
-// Computer Section Update with Printing Options
-chapterData['Computer'] = [
-  {
-    title: "Chapter 1: Basics & Generations",
-    summary: "Hardware, CPU and computer generations.",
-    content: `<p>CPU has ALU, CU and MU. Generations range from Vacuum Tubes to AI.</p>`
-  },
-  {
-    title: "Chapter 2: Printing Documents in Word Processor (MS Word)",
-    summary: "Complete guide on Print Options, Print Preview, and Printing a Document.",
-    content: `
-      <h4>🖨️ Printing in Word Processor (MS Word / LibreOffice Writer):</h4>
-      <p>Jab aap apna koi document taiyar kar lete hain, toh usko paper par print karne ke liye Print feature ka use kiya jata hai.</p>
-      <hr style="border:0; border-top:1px dashed #cbd5e1; margin:15px 0;">
-      <h4>1. Print Shortcut Key:</h4>
-      <p>Keyboard se direct Print window open karne ke liye yeh shortcut dabayein:<br>
-      ⌨️ <b>Ctrl + P</b> (Windows) ya <b>Cmd + P</b> (Mac)</p>
-      <hr style="border:0; border-top:1px dashed #cbd5e1; margin:15px 0;">
-      <h4>2. What is Print Preview?</h4>
-      <p>• Print nikalne se pehle yeh dekhna ki page par text kaisa dikhega, <b>Print Preview</b> kehlata hai.<br>
-      • Isse margin, text alignment aur page breaks check ho jate hain jisse ink aur paper waste nahi hote.</p>
-      <hr style="border:0; border-top:1px dashed #cbd5e1; margin:15px 0;">
-      <h4>3. Important Printing Options:</h4>
-      <p>• <b>Copies:</b> Kitni prints chahiye (1, 2, etc.).<br>
-      • <b>Printer Selection:</b> Sahi printer choose karna.<br>
-      • <b>Pages/Range:</b> Poora document (All Pages), current page, ya custom pages (jaise 1-5).<br>
-      • <b>Orientation:</b> Portrait (vertical) ya Landscape (horizontal).</p>
-      <hr style="border:0; border-top:1px dashed #cbd5e1; margin:15px 0;">
-      <h4>4. Steps to Print:</h4>
-      <ol style="padding-left: 20px; line-height: 1.6;">
-        <li>File menu par click karein aur Print select karein (ya <b>Ctrl + P</b> dabayein).</li>
-        <li>Printer aur settings (Copies, Pages) set karein.</li>
-        <li>Print button par click karein.</li>
-      </ol>
-    `
-  },
-  {
-    title: "Chapter 3: 50+ Keyboard Shortcuts",
-    summary: "Essential shortcuts from A to Z.",
-    content: `<p>Ctrl+C (Copy), Ctrl+V (Paste), Ctrl+Z (Undo), Ctrl+P (Print), F5 (Refresh).</p>`
-  },
-  {
-    title: "Chapter 4: 50+ Tech Full Forms",
-    summary: "Common computer abbreviations.",
-    content: `<p>CPU, RAM, ROM, HTML, URL, USB, PDF, LAN, WAN.</p>`
-  }
-];
