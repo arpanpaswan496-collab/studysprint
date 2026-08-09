@@ -1,1 +1,28 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,Segoe UI,sans-serif;background:#f7f9fc;color:#172033;line-height:1.6}header{height:70px;padding:0 7%;display:flex;align-items:center;justify-content:space-between;background:#fff;border-bottom:1px solid #e5e9f0;position:sticky;top:0;z-index:5}.logo{font-size:25px;font-weight:900;color:#172033;text-decoration:none}.logo span,h1 span,small{color:#4f46e5}nav{display:flex;gap:24px}nav a{color:#566176;text-decoration:none;font-weight:700}header button{border:0;border-radius:12px;padding:9px;background:#f0f2f7;cursor:pointer;font-size:17px}.hero,section{max-width:1150px;margin:auto;padding:60px 7%}.hero{display:grid;grid-template-columns:1.4fr .75fr;gap:55px;align-items:center;padding-top:75px}.badge{background:#eef0ff;color:#4f46e5;border-radius:30px;padding:7px 14px}.hero h1{font-size:clamp(45px,7vw,72px);line-height:1.05;margin:20px 0}.hero p{font-size:19px;color:#687386}.btn{display:inline-block;border:0;border-radius:12px;padding:11px 18px;background:#4f46e5;color:#fff;font-weight:800;text-decoration:none;cursor:pointer;margin-top:10px}.alt{background:#fff;color:#4f46e5;border:1px solid #dfe3ed}aside{background:linear-gradient(145deg,#4f46e5,#7c3aed);color:white;border-radius:25px;padding:32px}aside div{font-size:50px}aside p{color:#fff}aside a{color:#fff;font-weight:800}.grid{display:grid;gap:16px}.subjects{grid-template-columns:repeat(4,1fr);margin-top:22px}.subjects button,.chapters article,.notes article,.tools article,.quiz{background:#fff;border:1px solid #e1e6ef;border-radius:18px;padding:22px;text-align:left;transition:.2s}.subjects button:hover,.chapters article:hover,.notes article:hover,.tools article:hover{transform:translateY(-3px);box-shadow:0 12px 30px #17203312}.subjects button{cursor:pointer;font-size:30px}.subjects h3{font-size:18px;margin:8px 0}.subjects p,.chapters p,.section-intro{color:#718096;font-size:15px}.notes{grid-template-columns:repeat(3,1fr);margin-top:20px}.pdf-icon{font-size:38px}.pdf-card h3{margin:8px 0}.pdf-actions{display:flex;gap:8px;flex-wrap:wrap}.pdf-actions .btn{font-size:14px}.coming{opacity:.72}.coming>span{display:inline-block;background:#eef0ff;color:#4f46e5;border-radius:20px;padding:4px 9px;font-weight:800;font-size:12px}.chapters{grid-template-columns:repeat(3,1fr);margin-top:18px}.chapters article{cursor:pointer}.chapters article span{color:#4f46e5;font-size:12px;font-weight:800}.chapters article h3{font-size:17px}input{width:100%;padding:12px;margin:7px 0;border:1px solid #dce2eb;border-radius:10px;font-size:16px}.quiz{max-width:850px;margin-top:20px}.quiz #answers{display:grid;gap:10px}.answer{padding:12px;border:1px solid #dce2eb;background:#fff;border-radius:10px;text-align:left;cursor:pointer;font-weight:700}.correct{background:#e8f8ee!important;border-color:#38a169!important}.wrong{background:#fff0f0!important;border-color:#e05252!important}.hidden{display:none}.tools{grid-template-columns:1fr 1fr;margin-top:20px}.tools article p{color:#4f46e5;font-weight:800}footer{background:#151b2a;color:#fff;padding:32px 7%;display:flex;justify-content:space-between}@media(max-width:850px){nav{display:none}.hero{grid-template-columns:1fr}.subjects,.notes,.tools{grid-template-columns:1fr 1fr}.chapters{grid-template-columns:1fr 1fr}}@media(max-width:500px){header{padding:0 5%}.hero,section{padding-left:5%;padding-right:5%}.subjects,.notes,.tools,.chapters{grid-template-columns:1fr}.pdf-actions{flex-direction:column}footer{flex-direction:column;gap:10px;text-align:center}}
+/* Logo Container Styling */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+/* Logo icon jo thoda hilega */
+.logo-icon {
+  font-size: 26px;
+  animation: bounce 2s infinite;
+}
+
+/* Colorful Gradient Font */
+.gradient-text {
+  background: linear-gradient(135deg, #6366f1, #ec4899, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
