@@ -26,3 +26,60 @@
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-4px); }
 }
+/* Footer ko center karne ke liye */
+.site-footer {
+  text-align: center;
+  padding: 30px 0;
+  background-color: #f9f9f9; /* Apni website ke mutabiq background color change kar sakte hain */
+  margin-top: 40px;
+}
+
+/* Box ko center align rakhne ke liye */
+.instagram-box {
+  display: inline-block;
+}
+
+/* Link ko design karne ke liye */
+.insta-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #E1306C; /* Instagram ka official pink/magenta color */
+  font-weight: bold;
+  font-size: 16px;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  
+  /* Yahan par humne move karne wala animation lagaya hai */
+  animation: floating 2s ease-in-out infinite;
+}
+
+/* Logo ka size set karne ke liye */
+.insta-logo {
+  width: 24px;
+  height: 24px;
+}
+
+/* Hover karne par effect */
+.insta-link:hover {
+  background: #E1306C;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Ye animation code link ko upar-neeche move (float) karega */
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px); /* Yeh thoda sa upar move karega */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
