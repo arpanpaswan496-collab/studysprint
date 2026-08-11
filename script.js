@@ -319,3 +319,13 @@ allSubjectCards.forEach(card => {
         }
     });
 });
+document.querySelectorAll('.card-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+        // Agar tu chahta hai ki naya page na khule balki yahi niche content aaye, 
+        // toh agali line ka comment (//) hata dena:
+        // e.preventDefault(); 
+
+        const subjectHeading = this.querySelector('h3').innerText;
+        console.log(subjectHeading + " card clicked successfully!");
+    });
+});
