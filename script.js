@@ -295,3 +295,27 @@ function checkAnswer(selected, correct) {
     }
   }, 1000);
 }
+// HTML ke saare subject cards ko ek sath pakadna
+const allSubjectCards = document.querySelectorAll('.card, .subject-card'); // Apni class ka naam yahan check kar lena
+
+allSubjectCards.forEach(card => {
+    card.addEventListener('click', function(e) {
+        // Card ke andar jo <h3> me subject ka naam likha hai (jaise Science, SST)
+        const subjectTitle = this.querySelector('h3').innerText.trim();
+        
+        console.log(subjectTitle + " par click hua hai!");
+
+        // Ab aap yahan condition laga sakte hain ki kis subject par click hone par kahan jana hai
+        if (subjectTitle.includes("Mathematics")) {
+            window.location.href = "math.html"; // Ya jo bhi aapka math ka page ho
+        } else if (subjectTitle.includes("Science")) {
+            window.location.href = "science.html";
+        } else if (subjectTitle.includes("Social Science")) {
+            window.location.href = "sst.html";
+        } else if (subjectTitle.includes("English")) {
+            window.location.href = "english.html";
+        } else if (subjectTitle.includes("Computer Science")) {
+            window.location.href = "computer.html";
+        }
+    });
+});
