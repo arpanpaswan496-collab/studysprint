@@ -295,17 +295,3 @@ function checkAnswer(selected, correct) {
     }
   }, 1000);
 }
-function selectSubject(subjectName) {
-    // Upar quiz section ke dropdown ko dhundhna
-    const subjectSelect = document.getElementById('subject-select'); // Agar dropdown ki ID kuch aur hai toh yahan change kar lena
-    
-    if (subjectSelect) {
-        subjectSelect.value = subjectName;
-    }
-
-    // Quiz section par smooth scroll karna
-    const quizSection = document.getElementById('quiz');
-    if (quizSection) {
-        quizSection.scrollIntoView({ behavior: 'smooth' });
-    }
-}
